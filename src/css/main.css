@@ -12,12 +12,12 @@ html{
 }
 
 body{
-    background: linear-gradient(190deg, #867bcd 0%, #6a5aab 100%);
+    background: linear-gradient(190deg, #c0bfc7 0%, #c7bfe6 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #222;
-    overflow: hidden0;
+    overflow: hidden;
 }
 
 .App{

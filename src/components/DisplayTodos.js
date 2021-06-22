@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodos , completeTodos, removeTodos, updateTodos } from '../redux/reducer';
 import TodoItem from './TodoItem';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const mapStatesToProps= (state) => {
     return{
@@ -24,15 +24,21 @@ const DisplayTodos = (props) => {
     return (
         <div className="displaytodos">
             <div className="buttons">
-            <button
-            onClick={()=>setSort("active")}
-            >Active</button>
-            <button
-            onClick={()=>setSort("completed")}
-            >Completed</button>
-            <button
-            onClick={()=>setSort("all")}
-            >All</button>
+        <motion.button
+        whileHover={{scale:1.4}}
+        whileTap={{scale:0.9}} 
+        onClick={()=>setSort("active")}
+        >Active</motion.button>
+        <motion.button
+        whileHover={{scale:1.4}}
+        whileTap={{scale:0.9}} 
+        onClick={()=>setSort("completed")}
+        >Completed</motion.button>
+        <motion.button
+        whileHover={{scale:1.4}}
+        whileTap={{scale:0.9}} 
+        onClick={()=>setSort("all")}
+        >All</motion.button>
         </div>
         <ul>
             <AnimatePresence>

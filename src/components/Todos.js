@@ -34,11 +34,17 @@ const add = () => {
             setTodo("");
     }
 }
+const onKeyUp=(ev)=>{
+    if(ev.key === "Enter"){
+        add()
+    }
+}
 
     return (
         <div className='addTodos'>
         <input 
         type='text' 
+        onKeyPress={(ev)=>onKeyUp(ev)}
         onChange={(e) => handleChange(e)} 
         className='todo-input'
         value={todo}
@@ -47,6 +53,7 @@ const add = () => {
         whileHover={{scale:1.1}}
         whileTap={{scale:0.9}}
         className="add-btn" 
+        type= "submit"
         onClick={()=>add()}><GoPlus/></motion.button>
         <br/>
 

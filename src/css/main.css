@@ -89,7 +89,7 @@ body{
 
 .displaytodos .buttons{
     margin-bottom: 2rem;
-    background-color: #e1ebfd;
+    background-color: transparent;
     border-radius: 20%;
     border:none;
     margin: 0 0.6rem;
@@ -97,6 +97,7 @@ body{
 
 .displaytodos .buttons button{
     padding: 0.5rem 1.2rem;
+    background-color: #e1ebfd;
     border-radius: 20%;
     border:none;
     margin: 0 0.6rem;

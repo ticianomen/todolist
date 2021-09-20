@@ -11,7 +11,7 @@ npm install
 npm start
 
 ### Demo
-https://ticianomen.github.io/todolist/
+https://todolist-ticianomen.vercel.app/
 
 <img width="764" alt="1" src="https://user-images.githubusercontent.com/83244923/131238927-3710c15b-394f-46aa-b87e-c40b77caa3dd.png">
 <img width="1035" alt="2" src="https://user-images.githubusercontent.com/83244923/131238922-38573734-cd78-40ef-8408-8273f325c59e.png">
